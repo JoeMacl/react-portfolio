@@ -1,0 +1,34 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 609px; /* Added 'px' for proper syntax */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust centering offset */
+    margin: auto;
+    opacity: 0;
+
+    svg {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(30deg) !important;
+    }
+
+    .solid-logo {
+        position: absolute;
+        top: 50%; /* Center within container */
+        left: 50%; /* Center within container */
+        transform: translate(-50%, -50%) rotateZ(30deg); /* Center and rotate */
+        width: 100%;
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+.svg-container {
+    stroke: #ffd700;
+    stroke-width: 5px;
+    fill: none;
+}
